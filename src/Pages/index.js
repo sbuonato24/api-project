@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDom from 'react-dom';
 
-const home = () => {
+const Home = () => {
     return (
         <div>
             <h1>
@@ -11,4 +11,4 @@ const home = () => {
     );
 };
 
-export default home;
+export default Home;

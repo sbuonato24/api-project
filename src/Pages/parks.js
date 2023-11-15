@@ -1,6 +1,6 @@
 import React from 'react';
 
-const parks = () => {
+const Parks = () => {
     return (
         <div>
             <h1>
@@ -10,4 +10,4 @@ const parks = () => {
     );
 };
 
-export default parks;
+export default Parks;
