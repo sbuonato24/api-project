@@ -16,24 +16,22 @@ const Breaking = () => {
                 console.log(err);
             })
     },[])
-    const [picture, setPicture]=useState('')
-    useEffect(()=>{
-        axios.get('https://www.breakingbadapi.com/api/')
-            .then(res=>{
-                console.log(res)
-                ;
-            })
-            .catch(err=>{
-                console.log(err);
-            })
-    },[])
-    return (
-        <div>
-            <h1>Breaking Bad Quote:</h1>
-            <p >{quote}</p>
-            <p>{author}</p>
-        </div>
-    )
+    const options = {
+        method: 'GET',
+        url: 'https://wikimedia-image-search.p.rapidapi.com/wiki/',
+        params: {
+          query: 'Jesse Pinkman'
+        }
+    }
+        try {
+            res = axios.request(options);
+            consolelog(res.data)
+        } 
+        catch (error) {
+            console.log(err);
+        }
+
+    
 }
 
 export default Breaking;
