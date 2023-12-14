@@ -22,7 +22,7 @@ const Breaking = () => {
 
     const apiKey = 'AIzaSyB8ZA3u7oh1KRaDC0Kv4MFUNj6VlKgY9VE';
     const cx = '36217ac0d82c34120';
-    const query = author+ " breaking bad";
+    const query = author + " breaking bad character picture ";
 
     const apiUrl = `https://www.googleapis.com/customsearch/v1?q=${query}&cx=${cx}&key=${apiKey}&searchType=image`;
     
