@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import axios from 'axios';
 import { queries } from '@testing-library/react';
+import "./breaking.css";
 
 
 const Parks = () => {
@@ -38,10 +39,10 @@ const Parks = () => {
     
     return (
         <div>
-            <h1>Parks and Rec Quote:</h1>
-            <p>{quote}</p>
-            <p>Ron Swanson</p>
-            {image && <img src={image} alt={'author image'} style={{ maxWidth: '3000px', borderRadius: '0%' }} />}
+            <h1 class="title">Parks and Rec</h1>
+            <p class="bad">"{quote}"</p>
+            <p class="bad">- Ron Swanson</p>
+            <p class="bad">{image && <img src={image} alt={'author image'} style={{ maxWidth: '300px', borderRadius: '0%' }} />}</p>
         </div>
     )
 };

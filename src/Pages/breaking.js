@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import axios from 'axios';
 import { queries } from '@testing-library/react';
+import "./breaking.css";
 
 const Breaking = () => {
     
@@ -22,10 +23,10 @@ const Breaking = () => {
 
     const apiKey = 'AIzaSyB8ZA3u7oh1KRaDC0Kv4MFUNj6VlKgY9VE';
     const cx = '36217ac0d82c34120';
-    const query = author + " breaking bad character picture ";
+    const query = "breaking bad " + author + " character portrait";
 
     const apiUrl = `https://www.googleapis.com/customsearch/v1?q=${query}&cx=${cx}&key=${apiKey}&searchType=image`;
-    
+    // document.p.style.color= "m"
     useEffect(()=>{
     axios.get(apiUrl)
         .then(res => {
@@ -38,11 +39,11 @@ const Breaking = () => {
         }, [apiUrl]);
     
     return (
-        <div>
-            <h1>Breaking Bad Quote:</h1>
-            <p>{quote}</p>
-            <p>{author}</p>
-            {image && <img src={image} alt={'author image'} style={{ maxWidth: '3000px', borderRadius: '0%' }} />}
+        <div >
+            <h1 class="title">Breaking Bad</h1>
+            <p class="bad">"{quote}"</p>
+            <p class="bad">- {author}</p>
+            <p class="bad">{image && <img src={image} alt={'author image'} style={{ maxWidth: '300px', borderRadius: '0%', borderColor: 'red', borderWidth: '10'}} />}</p>
         </div>
     )
     
