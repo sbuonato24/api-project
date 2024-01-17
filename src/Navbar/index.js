@@ -2,6 +2,7 @@ import React from "react";
 import { Nav, NavLink, NavMenu }
     from "./NavbarElements"
 
+//this file creates the navigation bar
 const Navbar = () => {
     return (
         <>

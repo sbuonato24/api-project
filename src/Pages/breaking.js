@@ -3,6 +3,7 @@ import axios from 'axios';
 import { queries } from '@testing-library/react';
 import "./breaking.css";
 
+//this file creates the breaking bad page that displays a quote from the show, the author, and the author's image
 const Breaking = () => {
     
     const [image, setImage]=useState('')
@@ -39,15 +40,17 @@ const Breaking = () => {
         }, [apiUrl]);
     
     return (
-        <div >
+        <html>
+            <title>Breaking Bad</title>
+            <body>
             <h1 class="title">Breaking Bad</h1>
             <p class="bad">"{quote}"</p>
             <p class="bad">- {author}</p>
-            <p class="bad">{image && <img src={image} alt={'author image'} style={{ maxWidth: '300px', borderRadius: '0%', borderColor: 'red', borderWidth: '10'}} />}</p>
-        </div>
+            <p class="bad">{image && <img src={image} alt={'author image'} style={{ maxWidth: '300px', borderRadius: '0%', borderColor: 'blue', borderWidth: '10', border: '2px solid blue'}} />}</p> 
+            </body>
+        </html>
     )
-    
-}
+};
 
 export default Breaking;
 

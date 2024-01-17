@@ -2,6 +2,7 @@ import { FaBars } from "react-icons/fa";
 import { NavLink as Link } from "react-router-dom";
 import styled from "styled-components";
 
+//this file contains the styling for the navigation bar
 export const Nav = styled.nav`
     background: #DC143C;
     height: 30px;
